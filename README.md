@@ -45,6 +45,8 @@ Correlation analysis identified `sqft_living`, `grade`, and `bathrooms` as stron
 
 ## Data Visualization
 Visualizations were created using pair plots to explore relationships between `price` and key features (`sqft_living`, `grade`, `bathrooms`). This provided a clear view of how these variables interact with house prices, offering insights into their distribution and correlation.
+![image](https://github.com/user-attachments/assets/bf92fddd-12fe-4177-9ce1-6fd98919045b)
+
 
 ## Recommendation
 While the initial model provides some predictive capability, further refinement is suggested. Implementing more sophisticated models like Decision Trees or Random Forests could potentially enhance prediction accuracy and provide additional actionable insights.
