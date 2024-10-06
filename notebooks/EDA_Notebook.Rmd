@@ -9,7 +9,6 @@ output: html_document
 This project analyzes a real estate dataset to develop a predictive model for house prices and explores the factors influencing these prices.
 
 ## Required Libaries
-```{r}
 library(ggplot2)
 library(GGally)
 
@@ -88,3 +87,5 @@ This analysis demonstrates the steps taken to clean the data, explore relationsh
 
 ## Recommendation
 While the initial model provides some predictive capability, further refinement is suggested. Implementing more sophisticated models like Decision Trees or Random Forests could potentially enhance prediction accuracy and provide additional actionable insights.
+
+```{r}
