@@ -1,7 +1,5 @@
-### R Markdown Report
-
-```markdown
----
+### R Markdown Report 
+----
 title: "House Price Prediction: Exploring the Factors Affecting House Prices Report"
 author: "Jetevu Richard"
 date: "`r Sys.Date()`"
@@ -32,3 +30,5 @@ i highly suggest exploring more advanced modeling techniques to improve predicti
 
 ## Conclusion
 The analysis provides a foundation for understanding the factors that influence house prices, with potential for further refinement through advanced modeling.
+
+```markdown
