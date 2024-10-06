@@ -26,7 +26,7 @@ This report summarizes the analysis performed on the house pricing dataset to pr
 - **RMSE:** The model achieved a Root Mean Squared Error (RMSE) of `221932.5`.
 
 ## Recommendations
-i highly suggest exploring more advanced modeling techniques to improve predictive accuracy.
+Highly suggest exploring more advanced modeling techniques to improve predictive accuracy.
 
 ## Conclusion
 The analysis provides a foundation for understanding the factors that influence house prices, with potential for further refinement through advanced modeling.
