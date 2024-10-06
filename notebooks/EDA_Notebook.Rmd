@@ -5,10 +5,10 @@ date: "`r Sys.Date()`"
 output: html_document
 ---
 
-# Introduction
+## Introduction
 This project analyzes a real estate dataset to develop a predictive model for house prices and explores the factors influencing these prices.
 
-# Required Libaries
+## Required Libaries
 ```{r}
 library(ggplot2)
 library(GGally)
@@ -17,7 +17,7 @@ library(GGally)
 data <- read.csv("C:/Users/hp/OneDrive/Documents/datasets/house pricing datasets/data_house.csv")
 head(data)
 
-Data Preparation and Cleaning
+## Data Preparation and Cleaning
 # Check structure of data
 str(data)
 
@@ -48,7 +48,7 @@ data_clean$waterfront <- as.factor(data_clean$waterfront)
 
 head(data_clean)
 
-Exploratory Data Analysis (EDA)
+## Exploratory Data Analysis (EDA)
 summary(data_clean)
 correlation_matrix <- cor(data_clean[, c("price", "bedrooms", "bathrooms", "sqft_living", "sqft_lot", "floors", 
                                          "waterfront", "condition", "grade", "sqft_above", "sqft_basement")], 
@@ -62,16 +62,16 @@ print(strong_correlation_matrix)
 pairplot <- ggpairs(data_clean[, c("price", "sqft_living", "grade", "bathrooms")])
 print(pairplot)
 
-Data Splitting
+## Data Splitting
 train_index <- sample(1:nrow(data_clean), 0.8 * nrow(data_clean))
 train_data <- data_clean[train_index, ]
 test_data <- data_clean[-train_index, ]
 
-Model Fitting
+## Model Fitting
 model <- lm(price ~ ., data = train_data)
 summary(model)  # Check model summary
 
-Model Evaluation
+## Model Evaluation
 # Making predictions
 predictions <- predict(model, newdata = test_data)
 
@@ -83,8 +83,8 @@ rmse <- sqrt(mse)
 
 cat("Root Mean Squared Error (RMSE):", rmse, "\n")
 
-Conclusion
+## Conclusion
 This analysis demonstrates the steps taken to clean the data, explore relationships, build a regression model, and evaluate its performance. Further steps may include testing more complex models for improved prediction accuracy.
 
-Recommendation
+## Recommendation
 While the initial model provides some predictive capability, further refinement is suggested. Implementing more sophisticated models like Decision Trees or Random Forests could potentially enhance prediction accuracy and provide additional actionable insights.
