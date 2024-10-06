@@ -1,8 +1,8 @@
 ### R Markdown Report 
 ----
-title: "House Price Prediction: Exploring the Factors Affecting House Prices Report"
-author: "Jetevu Richard"
-date: "`r Sys.Date()`"
+#### TITLE: House Price Prediction: Exploring the Factors Affecting House Prices Report
+#### NAME: Jetevu Richard
+#### DATE: 10-06-2024
 ---
 
 ## Introduction
